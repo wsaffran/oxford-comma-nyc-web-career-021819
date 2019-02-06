@@ -1,5 +1,5 @@
 def oxford_comma(array)
-  string = ""
+  new_array = []
   if array.length == 1
     array.join
   elsif array.length == 2
@@ -7,9 +7,9 @@ def oxford_comma(array)
   elsif array.length > 2  
     array.each.with_index(1) do |item, i|
       if i < array.length
-        array.join(", ")
+        new_array << array.join(", ")
       elsif i == array.length
-        array.join(", and ")
+        new_array << array.join(", and ")
       end
     end
     
