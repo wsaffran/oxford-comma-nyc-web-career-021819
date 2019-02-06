@@ -7,10 +7,11 @@ def oxford_comma(array)
   elsif array.length > 2  
     array.each.with_index(1) do |item, i|
       if i < array.length
-        new_array << array.join(", ")
+        new_array << "#{item}, "
       elsif i == array.length
-        new_array << array.join(", and ")
+        new_array << "and #{item}"
       end
     end
+    new_array.join
   end
 end
