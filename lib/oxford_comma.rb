@@ -8,6 +8,6 @@ def oxford_comma(array)
     string = ""
     array.each do |item, i|
       if i < array.length
-        string = 
+        array = 
   end
 end
