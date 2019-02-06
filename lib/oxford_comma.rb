@@ -6,8 +6,12 @@ def oxford_comma(array)
   elsif array.length > 2  
   
     string = ""
-    array.each.with_index do |item, i|
+    array.each.with_index(1) do |item, i|
       if i < array.length
-        array = 
+        array.join(", ")
+      if i == array.length
+        array.join(", and ")
+      end
+    end
   end
 end
