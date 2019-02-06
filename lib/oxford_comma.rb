@@ -8,7 +8,7 @@ def oxford_comma(array)
     array.each do |item|
       if i < array.length
         array.join(", ")
-        i++
+      
       if i == array.length
         array.join(", and ")
       end
